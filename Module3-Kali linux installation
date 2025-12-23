@@ -1,0 +1,7 @@
+Module 3: Kali Linux Download, Installation & Environment Setup
+
+This module focuses on preparing a professional ethical hacking environment using Kali Linux, the operating system widely used by cybersecurity professionals and penetration testers. It covers downloading Kali Linux from official sources and installing it using different methods such as VirtualBox, VMware, dual boot, and live USB, depending on system requirements.
+
+The module also includes initial system configuration, user management, package updates, and understanding the Kali Linux desktop environment. Learners become familiar with terminal usage, directory structure, and the purpose of pre-installed security tools. Emphasis is placed on setting up a safe, isolated lab environment to ensure ethical and legal practice.
+
+By completing this module, learners demonstrate the ability to prepare and maintain a real-world ethical hacking workspace similar to those used in professional security teams.
