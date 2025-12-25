@@ -1,0 +1,15 @@
+Module 5: Reconnaissance
+
+This module focuses on Reconnaissance, the first and one of the most important phases of ethical hacking and penetration testing. Reconnaissance is the process of gathering information about a target system, organization, or network before attempting any exploitation. The quality and depth of reconnaissance often determine the success of later attack phases, making it a critical skill for ethical hackers and security professionals.
+
+In this module, learners study how attackers collect both technical and non-technical information to build a complete picture of a target. This includes identifying domains, subdomains, IP addresses, network ranges, technologies, operating systems, web servers, and publicly accessible services. Understanding this information helps reveal potential attack surfaces and weak points that could be exploited in later stages.
+
+The module explains the two main types of reconnaissance: passive reconnaissance and active reconnaissance. Passive reconnaissance involves gathering information without directly interacting with the target systems. Examples include analyzing public websites, DNS records, WHOIS data, search engine results, public code repositories, job postings, and social media profiles. This type of reconnaissance is difficult to detect and highlights how much sensitive information organizations may unknowingly expose online.
+
+Active reconnaissance involves direct interaction with the target to gather more detailed technical data. This may include techniques such as pinging systems, scanning ports, querying DNS servers, or mapping network structures. While active reconnaissance provides more accurate information, it also increases the chance of detection. Learners understand the balance between information depth and stealth, which is crucial in real-world security testing.
+
+This module also introduces common reconnaissance techniques used by ethical hackers, such as footprinting, technology fingerprinting, subdomain discovery, and service identification. Learners understand how attackers combine small pieces of information to uncover larger security weaknesses. Emphasis is placed on thinking like an attacker while maintaining ethical and legal boundaries.
+
+From a defensive perspective, the module highlights why reconnaissance is dangerous for organizations and how security teams reduce exposure by limiting publicly available information, hardening systems, and monitoring suspicious activity. Learners gain awareness of how early-stage intelligence gathering leads to phishing attacks, targeted exploitation, and advanced persistent threats.
+
+By completing this module, learners demonstrate a strong understanding of how attackers begin their operations, how information leakage increases risk, and how reconnaissance fits into the overall hacking lifecycle. This knowledge forms the foundation for scanning, exploitation, and advanced attack techniques covered in later modules.
