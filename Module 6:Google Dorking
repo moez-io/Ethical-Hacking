@@ -1,0 +1,7 @@
+Module 6: Passive Reconnaissance – Google Dorking (First Step)
+
+This module focuses on Passive Reconnaissance, with a deep emphasis on Google Dorking as the first and most powerful step in information gathering. Passive reconnaissance involves collecting intelligence about a target without directly interacting with its systems, making it stealthy and difficult to detect. Google Dorking is a technique that uses advanced search operators to uncover sensitive information that has been unintentionally exposed on the internet.
+
+In this module, learners understand how search engines index vast amounts of public data and how attackers leverage this data to discover weaknesses before launching any active attacks. Google Dorking allows ethical hackers to locate exposed files, directories, login pages, configuration files, error messages, backups, and even sensitive documents such as PDFs, spreadsheets, or database dumps.
+
+The module explains how attackers use specific search operators like site:, intitle:, inurl:, filetype:, and cache: to narrow search results and target specific organizations or technologies.
