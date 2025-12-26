@@ -1,0 +1,11 @@
+Module 8: Subdomain Enumeration
+
+This module focuses on Subdomain Enumeration, an important reconnaissance technique used to discover additional assets associated with a target domain. Subdomains often host services such as APIs, admin panels, staging environments, or legacy applications, which may be less secure than the main website. Identifying these assets helps expand the attack surface during security testing.
+
+In this module, learners understand how subdomains are structured and why organizations use them to separate services and environments. The module explains how attackers leverage subdomain enumeration to uncover hidden or forgotten systems that may expose sensitive functionality or outdated software.
+
+Subdomain discovery in this module is performed using Subfinder, a passive reconnaissance tool designed to collect subdomains from publicly available sources without directly interacting with the target’s infrastructure. Learners gain hands-on experience using Subfinder to enumerate subdomains efficiently while maintaining a low detection profile.
+
+The module also covers analyzing discovered subdomains to determine which ones are active and relevant for further testing. From a defensive perspective, learners understand the importance of proper asset management, removing unused subdomains, and monitoring exposed services.
+
+By completing this module, learners demonstrate practical knowledge of identifying hidden infrastructure and understanding its role in real-world reconnaissance and penetration testing workflows.
