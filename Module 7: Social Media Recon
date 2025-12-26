@@ -1,0 +1,9 @@
+Module 7: Social Media and Web Technology Reconnaissance
+
+This module focuses on Social Media Reconnaissance and web technology identification, which are important parts of passive reconnaissance in ethical hacking. The goal of this module is to understand how publicly available information from social media platforms and websites can be used to gather intelligence about an organization or target without direct system interaction.
+
+In the social media reconnaissance section, learners study how attackers analyze platforms such as LinkedIn, Twitter, Facebook, and GitHub to collect information about employees, roles, technologies in use, internal processes, and organizational structure. This information is often used to craft targeted phishing attacks or social engineering campaigns. The module emphasizes the risks of oversharing and the importance of security awareness for employees.
+
+The web technology reconnaissance section explains how attackers identify the technologies used to build and run websites. Learners use browser-based tools and online services such as Wappalyzer, BuiltWith, and WhatWeb to detect web servers, content management systems, frameworks, programming languages, analytics platforms, and third-party services. Understanding these technologies helps attackers identify known vulnerabilities and outdated components.
+
+This module demonstrates how combining social media intelligence with web technology data allows attackers to build accurate attack profiles. From a defensive perspective, learners understand how organizations can reduce exposure by limiting public information, hardening web applications, and improving employee security awareness.
