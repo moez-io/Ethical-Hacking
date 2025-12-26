@@ -1,4 +1,4 @@
-Module 8: Subdomain Enumeration
+Module 9: Subdomain Enumeration
 
 This module focuses on Subdomain Enumeration, an important reconnaissance technique used to discover additional assets associated with a target domain. Subdomains often host services such as APIs, admin panels, staging environments, or legacy applications, which may be less secure than the main website. Identifying these assets helps expand the attack surface during security testing.
 
