@@ -1,0 +1,11 @@
+Module 6: WHOIS and DNS (Passive Reconnaissance)
+
+This module focuses on WHOIS and DNS analysis as key techniques used during passive reconnaissance. These methods help ethical hackers and security professionals collect critical information about a target without directly attacking or exploiting any system. The information gathered at this stage helps build an understanding of the target’s infrastructure and potential attack surface.
+
+The WHOIS section of this module explains how domain registration data can reveal valuable details such as domain ownership, registrar information, registration dates, expiration dates, and name servers. Learners understand how attackers use WHOIS data to identify organizations, third-party service providers, and possible weak points related to domain management. The module also discusses privacy protection and why some WHOIS data may be hidden.
+
+The DNS (Domain Name System) section explains how DNS translates domain names into IP addresses and why DNS records are important for reconnaissance. Learners study common DNS record types such as A, AAAA, MX, NS, TXT, and CNAME, and how misconfigured DNS records can expose internal infrastructure, mail servers, or cloud services.
+
+This module includes both web-based tools and command-line tools for DNS enumeration. Web tools are used for quick lookups and visualization, while command-line tools provide deeper technical insight. Learners use tools such as dig, host, and nslookup to query DNS records, identify name servers, and understand how information is returned from DNS servers.
+
+By completing this module, learners gain practical knowledge of how WHOIS and DNS data are used in early-stage reconnaissance and why proper domain and DNS configuration is critical for organizational security.
