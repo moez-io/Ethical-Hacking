@@ -1,17 +1,246 @@
-Module 4: Cyber Kill Chain Methodology
+1. Introduction to Cyber Kill Chain
 
-This module provides a comprehensive understanding of the Cyber Kill Chain Methodology, a cybersecurity framework developed to analyze and defend against advanced cyber attacks. The Cyber Kill Chain breaks an attack into structured stages, helping security professionals understand how attackers plan, execute, and complete intrusions. By studying this methodology, learners gain insight into real-world attacker behavior and learn how organizations disrupt attacks at different phases.
+The Cyber Kill Chain is a cybersecurity framework developed by Lockheed Martin to describe the stages of a cyber attack. It helps security professionals understand how attacks happen and where they can be detected, prevented, or mitigated.
 
-The first stage, Reconnaissance, involves gathering information about a target such as domain details, IP ranges, technologies used, employees, and public-facing services. Attackers use this information to identify weak points. Ethical hackers study this phase to understand how publicly available data can expose organizations.
+By breaking an attack into steps, defenders can stop attacks at early stages instead of reacting after damage occurs.
 
-Next is Weaponization, where attackers prepare malicious payloads, such as exploit code combined with malware or backdoors. This phase focuses on creating tools that will be used to compromise the target. Understanding weaponization helps security professionals recognize malicious files and exploit patterns.
+2. Purpose of Cyber Kill Chain
 
-In the Delivery phase, attackers transmit the weapon to the target using methods like phishing emails, malicious links, infected websites, or removable media. Ethical hackers learn how social engineering and delivery mechanisms are used to bypass human and technical defenses.
+The Cyber Kill Chain helps to:
 
-Exploitation occurs when the delivered payload takes advantage of a vulnerability in software, systems, or user behavior to gain initial access. This phase highlights the importance of patch management and secure configuration.
+Understand attacker behavior
 
-After exploitation, attackers move to Installation, where malware or persistence mechanisms are installed on the compromised system. This allows continued access even after reboots.
+Identify attack stages
 
-The Command and Control (C2) phase enables attackers to remotely communicate with infected systems, issue commands, and receive stolen data. Monitoring outbound traffic is critical to detecting this stage.
+Improve detection and response
 
-Finally, Actions on Objectives represents the attacker’s end goal, such as data theft, system disruption, espionage, or financial fraud. By understanding this full lifecycle, learners develop the ability to think strategically, identify threats early, and apply effective defensive and offensive security techniques.
+Strengthen defensive strategies
+
+Reduce attack impact
+
+3. Overview of Cyber Kill Chain Phases
+
+The Cyber Kill Chain consists of 7 phases:
+
+Reconnaissance
+
+Weaponization
+
+Delivery
+
+Exploitation
+
+Installation
+
+Command and Control (C2)
+
+Actions on Objectives
+
+4. Phase 1: Reconnaissance
+
+In this phase, attackers gather information about the target.
+
+Attacker Activities
+
+IP address discovery
+
+DNS enumeration
+
+Email harvesting
+
+Employee profiling
+
+Network scanning
+
+Defensive Controls
+
+Network monitoring
+
+Limiting public information
+
+IDS/IPS
+
+Security awareness training
+
+5. Phase 2: Weaponization
+
+The attacker creates a malicious payload by combining:
+
+Exploit code
+
+Malware (virus, trojan, ransomware)
+
+Examples
+
+Malware embedded in PDF or Word file
+
+Backdoor attached to an exploit
+
+Defensive Controls
+
+Endpoint protection
+
+Malware analysis
+
+Application whitelisting
+
+6. Phase 3: Delivery
+
+The attacker delivers the weapon to the target.
+
+Common Delivery Methods
+
+Phishing emails
+
+Malicious websites
+
+USB devices
+
+Drive-by downloads
+
+Defensive Controls
+
+Email security gateways
+
+Web filters
+
+USB control policies
+
+7. Phase 4: Exploitation
+
+The exploit is triggered to take advantage of a vulnerability.
+
+Examples
+
+Browser vulnerability exploitation
+
+Office macro execution
+
+OS privilege escalation
+
+Defensive Controls
+
+Patch management
+
+Vulnerability scanning
+
+Exploit prevention systems
+
+8. Phase 5: Installation
+
+Malware installs itself on the victim system.
+
+Examples
+
+Backdoor installation
+
+Rootkit deployment
+
+Persistence mechanisms
+
+Defensive Controls
+
+Antivirus
+
+EDR solutions
+
+File integrity monitoring
+
+9. Phase 6: Command and Control (C2)
+
+The infected system communicates with the attacker’s server.
+
+Purpose
+
+Receive commands
+
+Exfiltrate data
+
+Download additional malware
+
+Defensive Controls
+
+Firewall rules
+
+DNS monitoring
+
+Network traffic analysis
+
+10. Phase 7: Actions on Objectives
+
+The attacker achieves their goal.
+
+Possible Objectives
+
+Data theft
+
+System destruction
+
+Ransomware deployment
+
+Espionage
+
+Defensive Controls
+
+Data loss prevention (DLP)
+
+Incident response plans
+
+Backup and recovery
+
+11. Example of Cyber Kill Chain Attack
+
+Phishing Attack Example:
+
+Recon: Collect employee emails
+
+Weaponization: Create malicious PDF
+
+Delivery: Send phishing email
+
+Exploitation: User opens file
+
+Installation: Malware installs
+
+C2: Connects to attacker server
+
+Action: Data exfiltration
+
+12. Advantages of Cyber Kill Chain
+
+Clear attack visibility
+
+Helps proactive defense
+
+Improves incident response
+
+Useful for SOC operations
+
+13. Limitations of Cyber Kill Chain
+
+Focuses mainly on external attacks
+
+Less effective against insider threats
+
+Linear model (real attacks may not be linear)
+
+14. Cyber Kill Chain vs MITRE ATT&CK
+Cyber Kill Chain	MITRE ATT&CK
+Linear model	Matrix-based
+High-level stages	Detailed techniques
+Attack lifecycle	Tactics & techniques
+15. Ethical Considerations
+
+Understanding the Cyber Kill Chain is for:
+
+Defensive security
+
+Threat hunting
+
+Risk mitigation
+
+It should never be used for illegal hacking activities.
+
+16. Conclusion
+
+The Cyber Kill Chain provides a structured approach to understanding cyber attacks. By detecting and stopping threats at early stages, organizations can significantly reduce the risk and impact of cyber incidents.
