@@ -1,23 +1,238 @@
-Module 2: Cybersecurity Fundamentals
+1. Introduction to Cybersecurity
 
-Module 2 focuses on the core fundamentals of cybersecurity that every ethical hacker must understand. This module explains how data, systems, and networks are protected and why security is critical in today’s digital world. You will learn basic security principles used by organizations to defend against cyber attacks.
+Cybersecurity is the practice of protecting systems, networks, programs, and data from digital attacks. These attacks aim to access, change, or destroy sensitive information, disrupt services, or extort money from users and organizations.
 
-This module introduces key concepts such as Confidentiality, Integrity, and Availability (CIA Triad), common security controls, risk, threats, vulnerabilities, and attack surfaces. Understanding these fundamentals will help you better analyze systems during reconnaissance and exploitation phases in later modules.
+In today’s digital world, cybersecurity is essential for individuals, businesses, and governments.
 
-What You Will Learn
+2. Why Cybersecurity Is Important
 
-What is Cybersecurity
+Cybersecurity is important because it:
 
-CIA Triad (Confidentiality, Integrity, Availability)
+Protects sensitive data
 
-Threats, vulnerabilities, and risks
+Prevents financial losses
 
-Types of security controls (Administrative, Technical, Physical)
+Maintains system availability
 
-Attack surface and attack vectors
+Protects user privacy
 
-Basic security policies and best practices
+Ensures business continuity
 
-Outcome
+Without cybersecurity, systems are vulnerable to cyber attacks such as hacking, malware, and data breaches.
 
-After completing this module, you will have a strong understanding of cybersecurity principles that support ethical hacking and defensive security.
+3. Key Objectives of Cybersecurity (CIA Triad)
+3.1 Confidentiality
+
+Ensures that information is accessible only to authorized users.
+
+Examples:
+
+Encryption
+
+Access control
+
+Authentication
+
+3.2 Integrity
+
+Ensures that data is accurate and not altered without authorization.
+
+Examples:
+
+Hashing
+
+Digital signatures
+
+Checksums
+
+3.3 Availability
+
+Ensures that systems and data are available when needed.
+
+Examples:
+
+Backups
+
+Redundancy
+
+DDoS protection
+
+4. Types of Cyber Threats
+4.1 Malware
+
+Malicious software designed to damage or disrupt systems.
+
+Types:
+
+Virus
+
+Worm
+
+Trojan
+
+Ransomware
+
+Spyware
+
+4.2 Phishing
+
+A social engineering attack where attackers trick users into revealing sensitive information.
+
+4.3 Man-in-the-Middle (MITM) Attack
+
+An attacker intercepts communication between two parties.
+
+4.4 Denial of Service (DoS / DDoS)
+
+Attackers overwhelm a system with traffic to make it unavailable.
+
+4.5 Insider Threat
+
+Threat caused by authorized users misusing access.
+
+5. Types of Hackers
+5.1 White Hat Hackers
+
+Ethical hackers
+
+Work legally to improve security
+
+5.2 Black Hat Hackers
+
+Illegal hackers
+
+Malicious intent
+
+5.3 Gray Hat Hackers
+
+Act without permission
+
+Not always malicious
+
+6. Cybersecurity Domains
+
+Network Security
+
+Application Security
+
+Cloud Security
+
+Endpoint Security
+
+Information Security
+
+Operational Security
+
+7. Common Cybersecurity Controls
+7.1 Technical Controls
+
+Firewalls
+
+Antivirus
+
+IDS/IPS
+
+Encryption
+
+7.2 Administrative Controls
+
+Security policies
+
+Training
+
+Risk assessments
+
+7.3 Physical Controls
+
+Locks
+
+CCTV
+
+Biometric access
+
+8. Authentication and Authorization
+
+Authentication: Verifying identity
+(Passwords, biometrics, OTP)
+
+Authorization: Granting access rights
+(Roles, permissions)
+
+9. Basic Security Concepts
+9.1 Encryption
+
+Converts data into unreadable form to protect confidentiality.
+
+9.2 Hashing
+
+Used to verify data integrity.
+
+9.3 Least Privilege
+
+Users should have minimum access required.
+
+10. Cybersecurity Tools (Basic Overview)
+
+Nmap – Network scanning
+
+Wireshark – Packet analysis
+
+Burp Suite – Web security testing
+
+Metasploit – Exploitation framework
+
+Antivirus – Malware protection
+
+11. Cybersecurity Laws and Ethics
+
+Cybersecurity professionals must:
+
+Follow legal boundaries
+
+Have proper authorization
+
+Respect privacy and data protection laws
+
+Unauthorized hacking is illegal and unethical.
+
+12. Career Paths in Cybersecurity
+
+SOC Analyst
+
+Ethical Hacker
+
+Security Engineer
+
+Cloud Security Engineer
+
+Incident Responder
+
+Digital Forensics Analyst
+
+13. Real-World Example
+
+Phishing Attack Scenario:
+
+User receives fake email
+
+Clicks malicious link
+
+Credentials stolen
+
+Account compromised
+
+Prevention: Awareness + email security + MFA
+
+14. Advantages of Strong Cybersecurity
+
+Reduced risk of attacks
+
+Data protection
+
+Business trust
+
+Regulatory compliance
+
+15. Conclusion
+
+Cybersecurity fundamentals form the base of all security practices. Understanding threats, controls, and security principles is essential before moving into advanced areas like ethical hacking, SOC operations, and cloud security.
