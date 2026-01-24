@@ -1,0 +1,233 @@
+1. Introduction to Nmap
+
+Nmap (Network Mapper) is a powerful open-source tool used for network discovery, port scanning, and security auditing. It helps security professionals identify live hosts, open ports, running services, operating systems, and potential vulnerabilities in a network.
+
+Nmap is widely used by:
+
+Penetration testers
+
+Network administrators
+
+SOC analysts
+
+Ethical hackers
+
+2. Why Nmap Is Important
+
+Nmap is important because it:
+
+Identifies active devices on a network
+
+Detects open and closed ports
+
+Reveals running services and versions
+
+Helps find security misconfigurations
+
+Assists in vulnerability assessment
+
+3. How Nmap Works
+
+Nmap works by sending specially crafted packets to target systems and analyzing the responses. Based on the replies (or lack of replies), Nmap determines:
+
+Host availability
+
+Port state (open, closed, filtered)
+
+Service and version information
+
+Operating system details
+
+4. Common Nmap Terminology
+
+Host Discovery – Finding live systems
+
+Port Scanning – Checking open ports
+
+Service Enumeration – Identifying services
+
+Fingerprinting – Detecting OS and software
+
+Scripts (NSE) – Automating security checks
+
+5. Port States in Nmap
+
+Open – Service is actively accepting connections
+
+Closed – Port is reachable but no service is listening
+
+Filtered – Firewall is blocking the scan
+
+Unfiltered – Port is accessible but state unknown
+
+Open|Filtered – Cannot determine exact state
+
+6. Types of Nmap Scans
+6.1 TCP Connect Scan
+nmap -sT target
+
+
+Completes full TCP handshake
+
+Reliable but easily detected
+
+6.2 SYN Scan (Stealth Scan)
+nmap -sS target
+
+
+Half-open scan
+
+Faster and stealthier
+
+Requires root privileges
+
+6.3 UDP Scan
+nmap -sU target
+
+
+Scans UDP services
+
+Slower but important
+
+6.4 FIN Scan
+nmap -sF target
+
+
+Bypasses some firewalls
+
+Works on Unix systems
+
+6.5 Ping Scan (Host Discovery)
+nmap -sn 192.168.1.0/24
+
+
+Finds live hosts only
+
+No port scanning
+
+7. Service and Version Detection
+nmap -sV target
+
+
+Detects service name and version
+
+Helps identify vulnerable software
+
+8. Operating System Detection
+nmap -O target
+
+
+Detects target OS
+
+Uses TCP/IP fingerprinting
+
+9. Aggressive Scan
+nmap -A target
+
+
+Includes:
+
+OS detection
+
+Version detection
+
+Script scanning
+
+Traceroute
+
+10. Nmap Scripting Engine (NSE)
+
+NSE allows automation of advanced scanning tasks.
+
+Script Categories
+
+auth
+
+brute
+
+discovery
+
+exploit
+
+malware
+
+vuln
+
+Example: Vulnerability Scan
+nmap --script vuln target
+
+11. Firewall & IDS Evasion Techniques
+
+Fragment packets
+
+nmap -f target
+
+
+Spoof source IP
+
+nmap -S fakeIP target
+
+
+Decoy scanning
+
+nmap -D RND:10 target
+
+12. Output Formats
+nmap -oN output.txt target
+nmap -oX output.xml target
+nmap -oA scan_results target
+
+
+Normal
+
+XML
+
+Grepable
+
+All formats
+
+13. Nmap Use Cases
+
+Network inventory
+
+Security auditing
+
+Vulnerability assessment
+
+Penetration testing
+
+Compliance checking
+
+14. Advantages of Nmap
+
+Free and open source
+
+Highly customizable
+
+Large script library
+
+Cross-platform support
+
+15. Limitations of Nmap
+
+Can be detected by IDS/IPS
+
+Requires experience for accurate results
+
+Slow scans on large networks
+
+16. Ethical and Legal Considerations
+
+Nmap should only be used on:
+
+Systems you own
+
+Networks you manage
+
+Targets with written permission
+
+Unauthorized scanning is illegal and unethical.
+
+17. Conclusion
+
+Nmap is one of the most essential tools in cybersecurity. It provides deep visibility into networks and systems, helping professionals identify weaknesses before attackers do. Mastering Nmap is a core skill for ethical hackers and security engineers.
