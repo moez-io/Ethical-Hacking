@@ -1,0 +1,177 @@
+1. Introduction to Directory Brute Forcing
+
+Directory brute forcing is a web reconnaissance technique used to discover hidden directories and files on a web server that are not publicly linked. Attackers and penetration testers use this technique to identify sensitive resources such as admin panels, backups, configuration files, and APIs.
+
+2. Why Directory Brute Forcing Is Important
+
+Directory brute forcing helps in:
+
+Discovering hidden admin panels
+
+Finding backup and configuration files
+
+Mapping web application structure
+
+Identifying attack surfaces
+
+Supporting vulnerability assessment
+
+3. What is Gobuster
+
+Gobuster is a fast, open-source directory and file brute-forcing tool written in Go. It is commonly used in web penetration testing to discover:
+
+Directories
+
+Files
+
+DNS subdomains
+
+Virtual hosts
+
+Gobuster is popular because of its speed, simplicity, and accuracy.
+
+4. Features of Gobuster
+
+Multi-threaded (very fast)
+
+Supports HTTP/HTTPS
+
+Custom wordlists
+
+Status code filtering
+
+DNS and VHOST enumeration
+
+Easy to use
+
+5. Installation of Gobuster
+On Kali Linux
+sudo apt update
+sudo apt install gobuster -y
+
+Verify Installation
+gobuster --help
+
+6. Gobuster Modes
+
+Gobuster supports different modes:
+
+dir – Directory and file brute forcing
+
+dns – DNS subdomain brute forcing
+
+vhost – Virtual host discovery
+
+7. Directory Brute Forcing with Gobuster
+Basic Directory Scan
+gobuster dir -u http://example.com -w /usr/share/wordlists/dirb/common.txt
+
+
+-u → Target URL
+
+-w → Wordlist
+
+8. File Enumeration with Extensions
+gobuster dir -u http://example.com -w wordlist.txt -x php,html,txt
+
+
+-x → File extensions to search
+
+9. Using Threads for Faster Scanning
+gobuster dir -u http://example.com -w wordlist.txt -t 50
+
+
+-t → Number of threads
+
+10. Excluding Status Codes
+gobuster dir -u http://example.com -w wordlist.txt -b 403,404
+
+
+-b → Blacklist status codes
+
+11. Discovering Hidden Directories with HTTPS
+gobuster dir -u https://example.com -w wordlist.txt -k
+
+
+-k → Ignore SSL certificate errors
+
+12. DNS Brute Forcing Using Gobuster
+gobuster dns -d example.com -w subdomains.txt
+
+
+Used to find hidden subdomains.
+
+13. Virtual Host Discovery
+gobuster vhost -u http://example.com -w vhosts.txt
+
+
+Finds virtual hosts on the same IP.
+
+14. Common Wordlists Used
+
+/usr/share/wordlists/dirb/common.txt
+
+/usr/share/wordlists/dirbuster/
+
+SecLists wordlists
+
+15. Sample Output Explanation
+
+Gobuster displays:
+
+Discovered directory/file
+
+HTTP status code
+
+Response size
+
+Example:
+
+/admin (Status: 200)
+/backup.zip (Status: 200)
+
+16. Advantages of Gobuster
+
+Very fast scanning
+
+Easy to learn
+
+Accurate results
+
+Supports multiple enumeration modes
+
+17. Limitations of Gobuster
+
+No recursive scanning
+
+Depends on wordlist quality
+
+Cannot bypass WAF or authentication
+
+18. Ethical and Legal Considerations
+
+Gobuster should only be used on:
+
+Web applications you own
+
+Authorized penetration testing targets
+
+Legal lab environments (TryHackMe, HTB)
+
+Unauthorized scanning is illegal.
+
+19. Real-World Use Case
+
+During a web security assessment:
+
+Gobuster finds /admin
+
+Tester accesses login page
+
+Further testing reveals weak credentials
+
+This shows how directory brute forcing helps in attack surface discovery.
+
+20. Conclusion
+
+Directory brute forcing is a crucial reconnaissance technique in web penetration testing. Gobuster is a powerful and fast tool that helps security professionals discover hidden web resources and understand application structure.
