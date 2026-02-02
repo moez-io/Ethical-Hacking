@@ -1,0 +1,165 @@
+What is Hash Dumping?
+
+Hash dumping is the process of extracting password hashes from a system.
+
+⚠️ Important concept:
+
+Passwords are not stored in plain text — they’re stored as hashes
+
+Attackers try to dump hashes so they can:
+
+Crack them offline
+
+Reuse them in pass‑the‑hash attacks
+
+What is a Hash?
+
+A hash is a one‑way encrypted value of a password.
+
+Example:
+
+password123 → 482c811da5d5b4bc6d497ffa98491e38
+
+
+👉 You can’t reverse it directly, only guess & compare
+
+Why Hash Dumping is Dangerous
+
+Reveals user & admin credentials
+
+Enables lateral movement
+
+Leads to privilege escalation
+
+Used in Active Directory attacks
+
+Common Types of Password Hashes
+🪟 Windows
+
+LM (very weak – deprecated)
+
+NTLM (still widely used)
+
+🐧 Linux
+
+MD5
+
+SHA‑256
+
+SHA‑512
+
+Where Hashes Are Stored
+Windows
+
+SAM (Security Account Manager)
+
+LSASS process memory
+
+Linux
+
+/etc/shadow
+
+Hash Dumping Methods (Conceptual)
+1️⃣ Local Hash Dumping
+
+When attacker already has access to the system
+
+Admin/root privileges required
+
+Targets:
+
+SAM database
+
+Memory
+
+2️⃣ Remote Hash Dumping
+
+From another system over the network
+
+Uses SMB / authentication mechanisms
+
+Often used in domain environments
+
+3️⃣ Memory-Based Dumping
+
+Hashes extracted from RAM
+
+Very dangerous because hashes exist temporarily in memory
+
+What Happens After Dumping Hashes?
+🔓 Hash Cracking
+
+Using:
+
+Wordlists
+
+Rules
+
+Brute force
+
+Goal:
+
+hash → password
+
+🔁 Pass-the-Hash (PtH)
+
+❗ No cracking required
+
+Attacker uses:
+
+NTLM hash = authentication
+
+
+➡️ Logs in without knowing password
+
+Defensive Perspective (Very Important for Exams)
+How to Prevent Hash Dumping
+
+🔐 System Level:
+
+Disable LM hashes
+
+Use strong passwords
+
+Enable Credential Guard
+
+Apply patches
+
+🔐 Network Level:
+
+Limit admin privileges
+
+Monitor lateral movement
+
+Use MFA
+
+🔐 Monitoring:
+
+Detect abnormal LSASS access
+
+Log authentication attempts
+
+Hash Dumping vs Password Cracking
+Feature	Hash Dumping	Password Cracking
+Purpose	Extract hashes	Recover passwords
+Needs access	Yes	No (offline)
+Speed	Fast	Slow
+Tools (Awareness Only – Exam Relevant)
+
+Credential dumping frameworks
+
+Password cracking tools
+
+Memory analysis tools
+
+(You don’t need commands unless you’re in a lab like TryHackMe)
+
+Key Exam / Interview Points ⭐
+
+Hash ≠ password
+
+Hash dumping needs privileged access
+
+NTLM hashes can be reused
+
+Pass‑the‑hash bypasses cracking
