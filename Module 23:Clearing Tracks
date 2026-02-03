@@ -1,0 +1,226 @@
+Clearing tracks means removing or hiding evidence of activities performed on a system so that attackers (or testers in labs) are not easily detected.
+In ethical hacking, this is studied to understand attacker behavior and improve defenses.
+
+⚠️ Important: This module is theoretical + defensive awareness.
+Never perform this on real systems without explicit authorization.
+
+1. Why Clearing Tracks Matters
+
+Attackers clear tracks to:
+
+Avoid detection
+
+Maintain persistence
+
+Delay incident response
+
+Hide identity & activity
+
+Defenders study this to:
+
+Detect intrusions
+
+Improve logging
+
+Strengthen monitoring
+
+2. Types of Tracks Left Behind
+
+During an attack, traces are left in:
+
+Log files
+
+Command history
+
+Authentication records
+
+Network traffic
+
+Temporary files
+
+Registry (Windows)
+
+Memory (RAM)
+
+3. Log Files Overview
+Linux Logs
+
+/var/log/auth.log
+
+/var/log/syslog
+
+/var/log/messages
+
+/var/log/secure
+
+Windows Logs
+
+Security logs
+
+System logs
+
+Application logs
+
+Event Viewer
+
+4. Common Clearing Track Techniques (Conceptual)
+1️⃣ Log Manipulation
+
+Deleting logs
+
+Modifying log entries
+
+Replacing logs with fake data
+
+⚠️ Deleting logs is very suspicious and easy to detect.
+
+2️⃣ Command History Removal
+
+Shell history records commands used.
+
+Linux:
+
+.bash_history
+
+.zsh_history
+
+Indicators:
+
+Missing or truncated history files
+
+Sudden resets
+
+3️⃣ File Timestamp Manipulation
+
+Files have:
+
+Created
+
+Modified
+
+Accessed times
+
+Attackers may try to alter timestamps to blend in.
+
+4️⃣ Temporary File Cleanup
+
+/tmp
+
+/var/tmp
+
+Browser cache
+
+App temp files
+
+5. Windows Track Artifacts
+Windows Stores Evidence In
+
+Event Viewer
+
+Registry
+
+Prefetch files
+
+Recent files
+
+Recycle Bin
+
+Indicators of tampering:
+
+Disabled logging
+
+Cleared event logs
+
+Missing prefetch files
+
+6. Network-Level Tracks
+
+Even if logs are deleted locally:
+
+Firewalls
+
+IDS/IPS
+
+Routers
+
+Proxy logs
+
+💡 Network logs are harder to erase.
+
+7. Advanced Track Hiding (High-Level)
+
+(For awareness only)
+
+Living-off-the-land (LOLBins)
+
+In-memory execution
+
+Encrypted communication
+
+Log flooding
+
+These techniques are studied to detect, not perform.
+
+8. Detection of Track Clearing
+
+Blue teams look for:
+
+Gaps in logs
+
+Log size anomalies
+
+Time mismatches
+
+Missing history files
+
+Unusual admin activity
+
+9. Clearing Tracks vs Anti-Forensics
+Clearing Tracks	Anti-Forensics
+Remove evidence	Obfuscate evidence
+Simple deletion	Encryption & hiding
+Easier to detect	Harder to detect
+10. Defensive Countermeasures
+
+🔐 Centralized logging (SIEM)
+🔐 Log integrity monitoring
+🔐 File integrity monitoring
+🔐 Immutable logs
+🔐 Regular audits
+
+11. Real-World Scenario (Awareness)
+
+Attacker gains access
+
+Executes commands
+
+Evidence appears in logs
+
+Logs are tampered with
+
+SOC detects anomalies
+
+Incident response triggered
+
+12. Ethical Reminder
+
+🚫 Clearing tracks on real systems without permission = crime
+✅ Learn this module to:
+
+Pass exams
+
+Understand attacker mindset
+
+Improve security defense
+
+Module Summary
+
+Tracks are always left
+
+Deleting logs raises red flags
+
+Network logs are key
+
+Defenders rely on correlation
+
+Clearing tracks ≠ invisible
