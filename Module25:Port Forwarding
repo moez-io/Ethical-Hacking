@@ -1,0 +1,167 @@
+1. What is Port Forwarding?
+
+Port forwarding is a technique that allows external devices on the internet to access a specific service inside a private network.
+
+In simple words 👇
+
+It tells the router:
+“If traffic comes on THIS port, send it to THAT device.”
+
+2. Why Port Forwarding is Needed
+
+Most home/office networks use private IPs (NAT).
+
+Example:
+
+Your PC: 192.168.1.10 (private)
+
+Router public IP: 203.x.x.x
+
+Without port forwarding:
+❌ Internet users cannot directly reach your PC.
+
+With port forwarding:
+✅ Specific services become reachable.
+
+3. How Port Forwarding Works
+Normal Traffic (No Port Forwarding)
+Internet ❌ → Router → Internal Device
+With Port Forwarding
+Internet → Router (Port Rule) → Internal Device
+
+Example rule:
+
+Public IP:80 → 192.168.1.10:80
+4. NAT and Port Forwarding Relationship
+
+NAT (Network Address Translation):
+
+Translates private IPs to public IP
+
+Blocks unsolicited inbound traffic by default
+
+Port forwarding:
+
+Creates an exception in NAT
+
+Allows specific inbound connections
+
+5. Common Uses of Port Forwarding
+
+Hosting a website
+
+SSH remote access
+
+FTP servers
+
+Game servers
+
+CCTV / IP cameras
+
+Labs (TryHackMe, HTB local setups)
+
+6. Port Forwarding Example (Conceptual)
+
+Service: SSH
+Internal IP: 192.168.1.5
+Port: 22
+
+Rule:
+
+Public_IP:2222 → 192.168.1.5:22
+
+Now:
+
+External user connects to Public_IP:2222
+
+Router forwards traffic to internal SSH server
+
+7. Types of Port Forwarding
+1️⃣ Static Port Forwarding
+
+Manual rule
+
+Permanent mapping
+
+Most common
+
+2️⃣ Dynamic Port Forwarding
+
+Ports assigned automatically
+
+Used with SOCKS & SSH tunnels
+
+3️⃣ Local Port Forwarding
+
+Redirects local traffic to remote service
+
+Common in SSH tunneling
+
+4️⃣ Remote Port Forwarding
+
+Remote system forwards traffic back to local machine
+
+Used in reverse connections
+
+8. Port Forwarding in Cybersecurity
+Offensive Side (Awareness)
+
+Used to expose internal services
+
+Used in reverse shells & tunnels
+
+Helps bypass NAT restrictions
+
+⚠️ Studied to detect and prevent abuse
+
+Defensive Side
+
+Restrict unnecessary port forwards
+
+Monitor exposed services
+
+Use firewalls
+
+Strong authentication
+
+9. Security Risks of Port Forwarding
+
+❌ Exposes internal services
+❌ Increases attack surface
+❌ Vulnerable services get scanned
+❌ Brute-force attacks possible
+
+Common attacks:
+
+SSH brute force
+
+FTP attacks
+
+Web exploits
+
+10. Best Security Practices
+
+✔ Forward only required ports
+✔ Use non-default ports (where applicable)
+✔ Strong passwords / key-based auth
+✔ Enable firewall rules
+✔ Disable unused forwards
+✔ Monitor logs
+
+11. Port Forwarding vs Port Triggering
+Feature	Port Forwarding	Port Triggering
+Permanent	Yes	No
+Manual rule	Yes	Trigger-based
+Security	Less secure	More secure
+Usage	Servers	Temporary apps
+12. Real-World Example (Lab Scenario)
+
+Local web server running
+
+Router configured with port forwarding
+
+External user accesses service
+
+Logs show inbound traffic
+
+Security team monitors exposure
