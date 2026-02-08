@@ -1,0 +1,233 @@
+1. What is Social Engineering?
+
+Social engineering is the art of manipulating people into revealing confidential information or performing actions that compromise security.
+
+👉 Instead of hacking systems, attackers hack the human mind.
+
+🔑 Humans are often the weakest link in security.
+
+2. Why Social Engineering is Effective
+
+People trust easily
+
+Fear, urgency, curiosity
+
+Lack of security awareness
+
+Desire to help
+
+Authority pressure
+
+No firewall can stop a human mistake.
+
+3. Goals of Social Engineering Attacks
+
+Attackers aim to:
+
+Steal passwords
+
+Gain system access
+
+Obtain sensitive data
+
+Install malware
+
+Bypass security controls
+
+4. Social Engineering Attack Lifecycle
+
+Information Gathering
+
+Social media
+
+Company websites
+
+Public data
+
+Relationship Building
+
+Pretending to be trusted
+
+Friendly communication
+
+Exploitation
+
+Triggering fear, urgency, authority
+
+Execution
+
+Victim reveals info or performs action
+
+Exit
+
+Attacker disappears
+
+5. Types of Social Engineering Attacks
+1️⃣ Phishing
+
+Fake emails or messages that trick users into:
+
+Clicking malicious links
+
+Entering credentials
+
+📌 Example:
+
+Fake bank email
+
+Fake password reset
+
+2️⃣ Spear Phishing
+
+Targeted phishing
+
+Customized for one person or company
+
+Much more effective
+
+3️⃣ Whaling
+
+Targets high-level executives
+
+CEO, CFO, managers
+
+Financial or strategic damage
+
+4️⃣ Vishing (Voice Phishing)
+
+Phone calls pretending to be:
+
+Bank
+
+IT support
+
+Government officials
+
+5️⃣ Smishing (SMS Phishing)
+
+Fake messages via SMS
+
+Delivery alerts
+
+OTP scams
+
+6️⃣ Pretexting
+
+Creating a fake scenario
+
+Pretending to need help
+
+Example:
+
+“I’m from IT, need your login to fix an issue”
+
+7️⃣ Baiting
+
+Offering something attractive
+
+Free USB
+
+Free downloads
+
+Victim curiosity = compromise.
+
+8️⃣ Tailgating / Piggybacking
+
+Physical access attack
+
+Following authorized personnel into secure areas
+
+6. Psychological Principles Used
+
+Attackers exploit:
+
+Authority (“I’m your boss”)
+
+Urgency (“Act now!”)
+
+Fear (“Your account is compromised”)
+
+Trust
+
+Reciprocity
+
+Curiosity
+
+7. Social Engineering in Cybersecurity
+Offensive Awareness
+
+Used in penetration testing (with permission)
+
+Tests employee awareness
+
+Defensive Importance
+
+Security training
+
+Awareness campaigns
+
+Policies & procedures
+
+8. Real-World Examples
+
+Fake IT helpdesk emails
+
+Fake job offers
+
+Fake invoice emails
+
+Fake tech support calls
+
+Most breaches start with one email.
+
+9. Indicators of Social Engineering Attacks
+
+🚩 Poor grammar
+🚩 Urgent language
+🚩 Suspicious links
+🚩 Unknown sender
+🚩 Requests for sensitive data
+🚩 Too good to be true offers
+
+10. Prevention & Defense
+For Individuals
+
+✔ Verify sender identity
+✔ Don’t click unknown links
+✔ Never share passwords/OTP
+✔ Think before acting
+
+For Organizations
+
+✔ Security awareness training
+✔ Email filtering
+✔ MFA
+✔ Clear reporting procedures
+✔ Physical security controls
+
+11. Social Engineering Tools (Awareness Only)
+
+Email spoofing techniques (for detection)
+
+Fake login pages (for training simulations)
+
+Call scripts (used in awareness drills)
+
+⚠️ Used only in authorized testing.
+
+12. Social Engineering vs Technical Attacks
+Social Engineering	Technical Attacks
+Targets people	Targets systems
+Low technical skill	High technical skill
+Very effective	Can be blocked
+Hard to detect	Easier to log
+13. Ethical & Legal Reminder
+
+🚫 Manipulating people without permission is illegal
+✅ Learn this to:
+
+Protect organizations
+
+Educate users
+
+Pass certifications
