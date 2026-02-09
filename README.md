@@ -1,6 +1,8 @@
 # Ethical-Hacking
 This repository contains an Ethical Hacking course with 30 modules covering the complete hacking lifecycle. Topics include Kali Linux, reconnaissance, scanning, vulnerability analysis, exploitation, web attacks, password cracking, social engineering, anonymity, and post-exploitation. Built for beginners learning ethical cybersecurity skills.
 Introduction to Ethical Hacking (30 Modules Overview)
+<img width="1024" height="1024" alt="Gemini_Generated_Image_pa5rzppa5rzppa5r" src="https://github.com/user-attachments/assets/10b67a4b-066b-4252-b7b6-1d2d71f8014b" />
+
 
 Ethical Hacking is the legal and authorized practice of testing systems, networks, and websites to identify security weaknesses before malicious hackers exploit them. Ethical hackers use the same techniques as attackers—but with permission and responsibility—to help organizations protect their digital assets.
 
