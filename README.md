@@ -1,6 +1,8 @@
 # Ethical-Hacking
 This repository contains an Ethical Hacking course with 30 modules covering the complete hacking lifecycle. Topics include Kali Linux, reconnaissance, scanning, vulnerability analysis, exploitation, web attacks, password cracking, social engineering, anonymity, and post-exploitation. Built for beginners learning ethical cybersecurity skills.
 Introduction to Ethical Hacking (30 Modules Overview)
+
+
 ![5-essential-reasons-why-you-should-learn-ethical-hacking jpg](https://github.com/user-attachments/assets/58996609-7423-41d5-a396-199e76c3fb28)
 
 
