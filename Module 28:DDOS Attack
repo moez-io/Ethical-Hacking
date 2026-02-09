@@ -1,0 +1,203 @@
+1. What is a DoS / DDoS Attack?
+Denial of Service (DoS)
+
+An attack that floods a system with traffic so legitimate users cannot access the service.
+
+Distributed Denial of Service (DDoS)
+
+Same idea, but the traffic comes from many different systems at the same time.
+
+📌 Key difference:
+
+DoS → single source
+
+DDoS → multiple sources (distributed)
+
+2. Objective of a DDoS Attack
+
+Attackers aim to:
+
+Make a website/server unavailable
+
+Disrupt business operations
+
+Cause financial loss
+
+Damage reputation
+
+Distract security teams from other attacks
+
+3. How a DDoS Attack Works (Conceptual)
+Multiple infected systems
+        ↓
+   Target server
+        ↓
+Server resources exhausted
+        ↓
+Legitimate users blocked
+
+These infected systems are usually part of a botnet.
+
+4. What is a Botnet?
+
+A botnet is a network of:
+
+Compromised PCs
+
+Servers
+
+IoT devices
+
+Each infected device = bot (zombie)
+Controller = botmaster
+
+Botnets are commonly used in DDoS attacks.
+
+5. Types of DDoS Attacks
+1️⃣ Volume-Based Attacks
+
+Goal: Consume bandwidth
+
+Examples:
+
+UDP flood
+
+ICMP flood
+
+Effect:
+
+Network becomes congested
+
+Legitimate traffic can’t get through
+
+2️⃣ Protocol Attacks
+
+Goal: Exhaust server/network resources
+
+Target:
+
+Firewalls
+
+Load balancers
+
+Network stack
+
+Examples:
+
+SYN flood
+
+Ping of Death
+
+3️⃣ Application-Layer Attacks
+
+Goal: Crash applications
+
+Target:
+
+Web servers
+
+APIs
+
+Login pages
+
+Examples:
+
+HTTP request floods
+
+Slow request attacks
+
+📌 Hardest to detect because traffic looks “normal”.
+
+6. DDoS vs DoS (Comparison)
+Feature	DoS	DDoS
+Source	Single system	Multiple systems
+Power	Low	Very high
+Detection	Easier	Harder
+Impact	Limited	Massive
+7. Signs of a DDoS Attack
+
+🚩 Website extremely slow
+🚩 Server timeout errors
+🚩 High CPU / memory usage
+🚩 Unusual traffic spikes
+🚩 Legitimate users blocked
+
+8. Real-World DDoS Targets
+
+E-commerce websites
+
+Banks
+
+Government portals
+
+Gaming servers
+
+Social media platforms
+
+DDoS attacks are often used during:
+
+Political conflicts
+
+Business rivalries
+
+Hacktivism campaigns
+
+9. Why DDoS is Hard to Stop
+
+Traffic comes from many IPs
+
+Often global distribution
+
+Spoofed packets
+
+Legitimate-looking requests
+
+10. DDoS Defense & Mitigation
+Network-Level Protection
+
+✔ Firewalls
+✔ Rate limiting
+✔ Traffic filtering
+
+Application-Level Protection
+
+✔ Web Application Firewalls (WAF)
+✔ CAPTCHA
+✔ Request validation
+
+Cloud-Based Protection
+
+✔ DDoS mitigation services
+✔ Content Delivery Networks (CDN)
+✔ Traffic scrubbing centers
+
+Monitoring & Response
+
+✔ Traffic baselining
+✔ IDS / IPS
+✔ SIEM correlation
+✔ Incident response plans
+
+11. Legal & Ethical View
+
+🚫 Launching DDoS attacks is illegal
+🚫 Even “testing” without permission is a crime
+✅ Learning is allowed for:
+
+Defense
+
+Detection
+
+Exams
+
+SOC roles
+
+12. DDoS in Ethical Hacking
+
+In authorized testing:
+
+Only simulation
+
+Only written permission
+
+Focus on resilience, not damage
