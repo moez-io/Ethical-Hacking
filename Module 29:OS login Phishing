@@ -1,0 +1,202 @@
+1. What is OS Login Phishing?
+
+OS Login Phishing is a social-engineering attack where attackers trick users into entering their operating system login credentials (Windows / Linux / macOS) into a fake login screen that looks legitimate.
+
+👉 The attacker doesn’t break the OS
+👉 The user gives the credentials voluntarily
+
+2. Why OS Login Phishing is Dangerous
+
+OS credentials give full system access
+
+Leads to:
+
+Data theft
+
+Privilege escalation
+
+Lateral movement
+
+Complete system compromise
+
+One successful OS login phishing = game over.
+
+3. Common Targets
+
+Corporate employees
+
+System administrators
+
+Students (labs & universities)
+
+Remote workers
+
+Helpdesk users
+
+4. How OS Login Phishing Works (Conceptual Flow)
+
+Pretext Created
+
+Fake IT issue
+
+Fake update notice
+
+Fake security alert
+
+Fake Login Interface
+
+Looks like Windows / Linux / macOS login
+
+Same logo, same colors
+
+User Interaction
+
+User enters username & password
+
+Credential Capture
+
+Credentials sent to attacker
+
+Attacker Access
+
+Uses real OS login later
+
+5. Common OS Login Phishing Scenarios
+1️⃣ Fake System Update Screen
+
+Message like:
+
+“System update required. Please re-login.”
+
+User thinks it’s normal → enters password.
+
+2️⃣ Fake Lock Screen
+
+Screen appears “locked”
+
+User forced to re-authenticate
+
+Actually a phishing screen
+
+3️⃣ Fake IT Support Request
+
+Email / message from “IT department”
+
+Asks user to verify login
+
+4️⃣ Remote Work Phishing
+
+Fake VPN or remote desktop login page
+
+Targets employees working from home
+
+6. Operating Systems Commonly Targeted
+Windows
+
+Fake Windows lock screen
+
+Fake domain login
+
+Fake credential prompts
+
+Linux
+
+Fake terminal login
+
+Fake sudo password prompts
+
+Fake display manager screens
+
+macOS
+
+Fake Apple login prompts
+
+Fake iCloud / system dialogs
+
+7. Psychological Tricks Used
+
+Attackers exploit:
+
+Authority (IT admin)
+
+Urgency (“Account locked”)
+
+Fear (“Security breach detected”)
+
+Routine behavior (users expect login prompts)
+
+8. Indicators of OS Login Phishing
+
+🚩 Login screen appears unexpectedly
+🚩 System behaves normally after login
+🚩 Login request after clicking a link
+🚩 Grammar or visual inconsistencies
+🚩 Requests for repeated logins
+
+9. Difference: Real OS Login vs Phishing
+Real OS Login	Phishing Login
+Happens at boot/session lock	Appears randomly
+No browser involved	Often triggered by email/link
+System-controlled	User-triggered
+Secure authentication	Credentials captured
+10. Impact of OS Login Phishing
+
+Full system compromise
+
+Ransomware deployment
+
+Credential reuse attacks
+
+Network breach
+
+Data exfiltration
+
+Many major breaches start with OS credential theft.
+
+11. Defense & Prevention
+User Awareness
+
+✔ Never enter OS password after clicking links
+✔ Verify unexpected login prompts
+✔ Report suspicious behavior
+
+Technical Controls
+
+✔ Multi-Factor Authentication (MFA)
+✔ Endpoint Detection & Response (EDR)
+✔ Privilege separation
+✔ Application whitelisting
+
+Organizational Controls
+
+✔ Security awareness training
+✔ Incident response plans
+✔ Least privilege policy
+✔ Regular phishing simulations (authorized)
+
+12. Blue Team Detection
+
+Security teams detect OS phishing by:
+
+Abnormal login times
+
+New device logins
+
+Impossible travel alerts
+
+Credential misuse patterns
+
+Endpoint alerts
+
+13. Legal & Ethical Reminder
+
+🚫 Creating or using OS phishing attacks without permission is illegal
+✅ Studying this module helps:
+
+Prevent attacks
+
+Educate users
+
+Pass exams
+
+Work in SOC roles
